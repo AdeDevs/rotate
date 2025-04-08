@@ -1,2 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Comfortaa&family=DM+Serif+Display&family=Montserrat&family=Poppins:wght@700&display=swap');
+
+.nav {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  color: white;
+  display: flex;
+  width: 100%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  font-family: "montserrat", serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav .desktop-nav {
+  font-size: 14px;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav .desktop-nav li {
+  padding: 3px 10px;
+}
+
+.desktop-nav a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0px;
+  text-decoration-thickness: 0px;
+}
+
+.nav .desktop-nav a:hover {
+  color: #c1c1c1;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  transition: all 0.4s ease-in-out;
+  text-decoration-color: #c1c1c1;
+}
