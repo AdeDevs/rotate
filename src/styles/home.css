@@ -1,0 +1,47 @@
+.home-page {
+    background-color: #200603;
+    overflow: hidden;
+    color: #ffacdb;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+.home-page .hero {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.home-page .hero .hero-bg{
+    background-image: url(../assets/rotate-landing.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    transition: all .4s ease-in-out;
+}
+.home-page .hero h1 {
+    text-transform: uppercase;
+    font-size: 22vw;
+    text-align: right;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .home-page {
+        padding: 10px 30px;
+    }
+    .home-page .hero .hero-bg {
+        height: 50vh;
+    }
+}
+
+@media screen {
+    .home-page {
+        padding: 10px 20px;
+    }
+    .home-page .hero .hero-bg {
+        height: 85vh;
+    }
+}

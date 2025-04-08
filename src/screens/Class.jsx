@@ -1,4 +1,4 @@
-function CoursesPage() {
+function ClassPage() {
     return (
         <div className="courses-page">
             <h1>We are going to be telling you a bit about our courses</h1>
@@ -6,4 +6,4 @@ function CoursesPage() {
     )
 }
 
-export default CoursesPage;
+export default ClassPage;
