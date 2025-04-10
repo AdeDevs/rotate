@@ -8,7 +8,7 @@ html {
     padding: 0;
     border: 0;
     /* background-color: #18181b; */
-    background-color: #f1f2f4;
+    background-color: #ff3b25;
   }
   
   body,
@@ -89,7 +89,7 @@ html {
   /* Line-height should always be unitless! */
   body {
     line-height: 1.5;
-    background-color: #200603;
+    background-color: #970f00;
   }
   
   /* Tables still need 'cellspacing="0"' in the markup. */

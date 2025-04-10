@@ -1,8 +1,8 @@
 .home-page {
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: "montserrat", sans-serif;
     z-index: 999;
+    overflow: hidden;
     background-color: #f4f2ea;
 }
 
