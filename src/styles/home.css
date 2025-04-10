@@ -1,15 +1,16 @@
 .home-page {
-    background-color: #200603;
-    overflow: hidden;
-    color: #ffacdb;
-    padding: 10px 40px;
+    overflow-x: hidden;
     box-sizing: border-box;
     font-family: "montserrat", sans-serif;
+    z-index: 999;
 }
 
 .home-page .hero {
     box-sizing: border-box;
+    background-color: #200603;
     width: 100%;
+    padding: 10px 40px;
+    color: #ffacdb;
 }
 
 .home-page .hero .hero-bg{
@@ -28,20 +29,143 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 900px) {
-    .home-page {
+.home-main {
+    background-color: #f4f2ea;
+    padding: 30px 40px;
+}
+
+.home-main .we-are {
+    gap: 20px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.we-are div {
+    box-sizing: border-box;
+}
+
+.we-are div h1 {
+    width: 87%;
+    font-size: 36px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.we-are div p {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.we-are div button {
+    border-radius: 100px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px solid #200603;
+    font-weight: 400;
+    background-color: transparent;
+    font-family: inherit;
+    width: 100%;
+    padding: 20px 10px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.we-are div button:hover {
+    background-color: #200603;
+    color: #ffacdb;
+}
+
+.we-are div:nth-child(1) {
+    width: 34%;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+.we-are div:nth-child(2) {
+    background-color: #200603;
+    background-image: url(../assets/orange_dancing.jpg);
+    width: 40%;
+    height: 510px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+}
+
+.we-are div:nth-child(3) {
+    background-image: url(../assets/tall_dancing.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    width: 42%;
+}
+
+@media screen and (max-width: 925px) {
+    .home-page .hero {
         padding: 10px 30px;
+    }
+    .home-main {
+        padding: 30px;
     }
     .home-page .hero .hero-bg {
         height: 50vh;
     }
+    .we-are div h1 {
+        width: 100%;
+    }
+    .we-are div:nth-child(1) {
+        padding-bottom: 50px;
+    }
+    .we-are div:nth-child(3) {
+        height: 80vh;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .home-page {
+@media screen and (max-width: 850px) {
+    .home-main .we-are {
+        gap: 60px;
+    }
+    .we-are div {
+        min-width: 100%;
+    }
+    .we-are div:nth-child(1) {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .we-are div:nth-child(2){
+        position: relative;
+        height: 25vh;
+    }
+    .we-are div:nth-child(3) {
+        height: 45vh;
+    }
+    .we-are div p {
+        font-size: 17px;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .we-are div button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-page .hero{
         padding: 10px 20px;
     }
     .home-page .hero .hero-bg {
         height: 85vh;
+    }
+    .home-page .hero h1 {
+        font-size: 21vw;
     }
 }

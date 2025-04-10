@@ -16,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   transition: all .4s ease-in-out;
+  z-index: 1000;
 }
 
 .nav a {
@@ -107,7 +108,7 @@
   
 }
 
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 550px) 
 {
   .nav {
     padding: 35px 20px;
