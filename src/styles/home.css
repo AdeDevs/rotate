@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: "montserrat", sans-serif;
     z-index: 999;
+    background-color: #f4f2ea;
 }
 
 .home-page .hero {
@@ -30,7 +31,6 @@
 }
 
 .home-main {
-    background-color: #f4f2ea;
     padding: 30px 40px;
 }
 
@@ -225,7 +225,6 @@
     border-radius: 100px;
     border: 2px solid #200603;
     background-color: transparent;
-    cursor: pointer;
     color: #200603;
     padding: 25px 5px;
     transition: all .4s ease-in-out;
@@ -235,6 +234,176 @@
     background-color: #200603;
     color: #f4f2ea;
 }
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #ff623e;
+    padding: 1rem 0;
+    white-space: nowrap;
+    position: relative;
+  }
+ .marquee .left {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    background: linear-gradient( to right, #ff623e, #ff613e00);
+    left: 0;
+    z-index: 900;
+  }
+ .marquee .right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    background: linear-gradient( to right, #ff613e00, #ff623e);
+    z-index: 900;
+    float: right;
+    right: 0;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    padding: 4px 0;
+    white-space: nowrap;
+    z-index: 800;
+    animation: scroll-seamless 30s linear infinite;
+  }
+  .marquee-content:hover {
+    animation-play-state: paused;
+  }
+  .marquee-content span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffacdb;
+    padding-right: 30px; /* spacing between repeats */
+  }
+  
+  @keyframes scroll-seamless {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+.the-founder {
+    background-color: #200603;
+    color: #f4f2ea;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.the-founder .founder-info {
+    width: 35%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.the-founder .founder-info h1 {
+    font-size: 36px;
+    word-spacing: 100px;
+    line-height: 100%;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.the-founder .founder-info p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.the-founder .founder-bg {
+    background-image: url(../assets/rotate_founder.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 43%;
+}
+
+.mid-point h6{
+    padding: 30px 40px;
+    margin-bottom: 70px;
+    font-size: 5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #200603;
+    line-height: 100%;
+    text-align: justify;
+}
+
+footer {
+    border-top: 1px solid #000;
+    padding: 30px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+footer a {
+    color: inherit;
+    text-underline-offset: 2px;
+    transition: all .4s ease-in-out;
+}
+footer a:hover {
+    font-weight: 500;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+footer header {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #200603;
+}
+
+footer .info {
+    box-sizing: border-box;
+    width: 40%;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    box-sizing: border-box;
+}
+
+footer .links ul {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+footer .links .first{
+    margin-bottom: 15px;
+}
+
+footer h6 {
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #200603;
+    font-size: 22vw;
+    text-align: right;
+    line-height: 100%;
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 925px) {
     .home-page .hero {
@@ -254,6 +423,18 @@
     }
     .we-are div:nth-child(3) {
         height: 80vh;
+    }
+    .the-founder {
+        padding: 30px;
+    }
+    .the-founder .founder-bg {
+        width: 50%;
+    }
+    .mid-point h6 {
+        padding: 30px;
+    }
+    footer {
+        padding: 30px;
     }
 }
 
@@ -311,6 +492,25 @@
     .class-types p {
         width: 100%;
     }
+    .the-founder {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .the-founder div {
+        min-width: 100%;
+    }
+    .the-founder .founder-bg {
+        height: 40vh;
+    }
+    footer header {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+        padding-right: 0;
+    }
+    footer header div {
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -320,6 +520,9 @@
     .home-main {
         padding: 30px 20px;
     } 
+    .the-founder {
+        padding: 30px 20px;
+    }
     .home-main .we-are {
         gap: 40px;
     }
@@ -349,5 +552,18 @@
     }
     .class-types h1 {
         font-size: 24px;
+    }
+    .mid-point h6 {
+        font-size: 8vw;
+        margin-top: 40px;
+        margin-bottom: 140px;
+        padding: 30px 20px;
+    }
+    footer .links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer h6 {
+        font-size: 20vw;
     }
 }

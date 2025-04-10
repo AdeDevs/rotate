@@ -49,7 +49,76 @@ function HomeScreen() {
                         </section>
                     </div>
                 </section>
+
             </main>
+            <section className="mid-point">
+
+                <div class="marquee">
+                    <div className="left"></div>
+                    <div class="marquee-content">
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                    </div>
+                    <div className="right"></div>
+                </div>
+                <div className="the-founder">
+                    <div className="founder-info">
+                        <h1>meet the founder</h1>
+                        <p>
+                            Don’t worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what's going to separate this one from the rest. If you read the words back and don't hear your own voice in your head, that's a good sign you still have more work to do.
+                        </p>
+                    </div>
+                    <div className="founder-bg"></div>
+                </div>
+                <div class="marquee">
+                    <div className="left"></div>
+                    <div class="marquee-content">
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                        <span>POP, LOCK, & DANCE&nbsp;</span>
+                    </div>
+                    <div className="right"></div>
+                </div>
+                <h6>INSPIRING STRENGTH and BUILDING community through judgment-free dance</h6>
+            </section>
+            <footer>
+                <header>
+                    <div className="info">
+                        <h1>Rotate is a DANCE STUDIO located in HOUSTON, tx.</h1>
+                        <p>Made by <a href="#">AdeDevs</a></p>
+                    </div>
+                    <div className="links">
+                        <ul>
+                            <li className="first">about us</li>
+                            <li><a href="#">meet our instructor</a></li>
+                            <li><a href="#">class schedule</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <ul>
+                            <li className="first">shop</li>
+                            <li><a href="#">merch</a></li>
+                        </ul>
+                        <ul>
+                            <li className="first">get in touch</li>
+                            <li><a href="#">email</a></li>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">instagram</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <h6>rotate</h6>
+            </footer>
         </div>
     )
 }
