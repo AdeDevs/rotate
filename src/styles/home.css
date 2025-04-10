@@ -109,6 +109,133 @@
     width: 42%;
 }
 
+.home-main h6 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 45px;
+    line-height: 100%;
+    text-align: justify;
+    color: #200603;
+}
+
+.home-main .explore-classes {
+    background-image: url(../assets/explore_classes.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 45px auto 0 auto;
+    padding: 10px 60px 40px 60px;
+    box-sizing: border-box;
+}
+
+.explore-classes div {
+    width: 100%;
+    font-weight: 700;
+    padding: 10px 45px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 4.8vw;
+    text-align: justify;
+    color: #f4f2ea;
+}
+
+.explore-classes button {
+    width: 100%;
+    border-radius: 100px;
+    padding: 30px 5px;
+    border: 2px solid transparent;
+    background-color: #200603;
+    color: #f4f2ea;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    font-size: 17px;
+}
+
+.explore-classes button:hover {
+    border-color: #f4f2ea;
+    background-color: #200603b9;
+    font-weight: 500;
+}
+
+.home-main .class-types {
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #200603;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-types div {
+    width: 43%;
+    margin-top: 10px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.class-types .contemporary-class {
+    background-image: url(../assets/contemporary_dance.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.class-types .high-class {
+    background-image: url(../assets/high_energy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 70vh; 
+}
+
+.class-types h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.class-types p {
+    font-weight: 400;
+    width: 80%;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.class-types button {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 2px solid #200603;
+    background-color: transparent;
+    cursor: pointer;
+    color: #200603;
+    padding: 25px 5px;
+    transition: all .4s ease-in-out;
+}
+
+.class-types button:hover {
+    background-color: #200603;
+    color: #f4f2ea;
+}
+
 @media screen and (max-width: 925px) {
     .home-page .hero {
         padding: 10px 30px;
@@ -156,16 +283,71 @@
     .we-are div button {
         font-size: 20px;
     }
+    .home-page .explore-classes {
+        padding: 10px 30px 40px 30px;
+    }
+    .explore-classes div {
+        padding: 10px 25px;
+    }
+    .explore-classes button {
+        padding: 25px 5px;
+    }
+    .home-main .class-types {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .class-types div {
+        width: 100%;
+    }
+    .class-types .contemporary-class {
+        height: 50vh;
+    }
+    .class-types .high-class {
+        height: 50vh;
+    }
+    .class-types h1 {
+        font-size: 5vw;
+    }
+    .class-types p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 550px) {
     .home-page .hero{
         padding: 10px 20px;
     }
+    .home-main {
+        padding: 30px 20px;
+    } 
+    .home-main .we-are {
+        gap: 40px;
+    }
+    .we-are div p {
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .home-page .hero .hero-bg {
-        height: 85vh;
+        height: 45vh;
     }
     .home-page .hero h1 {
         font-size: 21vw;
+    }
+    .home-main h6 {
+        font-size: 8vw;
+    }
+    .home-main .explore-classes {
+        height: 70vh;
+    }
+    .explore-classes div {
+        flex-direction: column;
+        align-items: center;
+        font-size: 7.5vw;
+        line-height: 100%;
+        padding: 30px 0;
+    }
+    .class-types h1 {
+        font-size: 24px;
     }
 }
