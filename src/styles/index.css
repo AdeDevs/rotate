@@ -16,14 +16,14 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
   z-index: 1000;
 }
 
 .nav a {
   color: inherit;
   text-decoration: none;
-  transition: all .4s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 .nav a:hover {
   color: #f4f2ea;
@@ -50,7 +50,7 @@
   font-size: 23px;
 }
 
-.desktop-nav a {
+.desktop-nav a, .mobile-nav a {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -58,7 +58,7 @@
   text-decoration-thickness: 0px;
 }
 
-.nav .desktop-nav a:hover {
+.nav .desktop-nav a:hover, .mobile-nav a:hover {
   color: #f4f2ea;
   text-underline-offset: 4px;
   text-decoration-thickness: 3px;
@@ -76,11 +76,63 @@
   list-style-type: none;
 }
 
+
 .open-menu ion-icon {
   font-size: 40px;
-  border-radius: 20px;
   vertical-align: middle;
   display: inline-flex;
+}
+
+.mobile-nav {
+  background-color: #fd6b41;
+  color: #200603;
+  display: flex;
+  z-index: 999;
+  list-style-type: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  height: 100vh;
+  gap: 35px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.mobile-nav.active {
+  visibility: visible;
+  overflow: hidden;
+  opacity: 1;
+}
+
+
+.mobile-nav li {
+  line-height: 100%;
+  font-size: 33px;
+}
+
+.mobile-nav .mobile-head {
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.mobile-nav .cart {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 900px) {
@@ -90,17 +142,23 @@
   .nav .desktop-nav {
     display: none;
   }
-  .nav .mobile-nav {
-    display: none;
-  }
   .nav .logo {
-    font-size: 25px;
+    font-size: 30px;
+  }
+  .open-menu ion-icon {
+    font-size: 45px;
+  }
+  .mobile-nav .mobile-head {
+    padding: 50px 30px;
   }
 }
 
 @media screen and (min-width: 901px) {
-  .nav .mobile-nav, .nav-extras {
+   .nav-extras {
     display: none;
+  }
+  .mobile-nav {
+    opacity: none;
   }
   .nav .desktop-nav {
     display: inherit;
@@ -108,19 +166,21 @@
   
 }
 
-@media screen and (max-width: 550px) 
-{
-  .nav {
-    padding: 35px 20px;
+@media screen and (max-width: 550px) {
+  .nav, .mobile-nav .mobile-head {
+    padding: 30px 20px;
+  }
+  .nav .mobile-head {
+    font-size: 25px;
   }
   .nav .logo {
-    font-size: 20px;
+    font-size: 25px;
   }
   .nav-extras {
-    font-size: 20px;
+    font-size: 25px;
   }
   .open-menu ion-icon {
-    font-size: 30px;
+    font-size: 40px;
   }
   
 }
