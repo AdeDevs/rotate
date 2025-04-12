@@ -1,17 +1,21 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 function NavBar() {
+    const location = useLocation();
+
+    const pathClass = location.pathname.replace('/', '') || 'home';
+
     const [menuActive, setMenuActive] = useState(false)
     const toggleMenu = () => {
         setMenuActive(!menuActive)
     }
 
     return (
-        <nav className={`nav ${menuActive ? "active" : ""}`}>
+        <nav className={`nav ${pathClass}`}>
             <NavLink className="logo" to="/">Rotate studio</NavLink>
             <ul className="desktop-nav">
-                <NavLink to="/class"><li>class</li></NavLink>
+                <NavLink to="/class"><li>classes</li></NavLink>
                 <NavLink to="/schedule"><li>schedule</li></NavLink>
                 <NavLink to="/about"><li>about</li></NavLink>
                 <NavLink to="/merch"><li>merch</li></NavLink>

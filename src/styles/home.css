@@ -1,6 +1,6 @@
 .home-page {
     box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
+    font-family: "syncopate", sans-serif;
     z-index: 999;
     overflow: hidden;
     background-color: #f4f2ea;
@@ -24,7 +24,7 @@
 }
 .home-page .hero h1 {
     text-transform: uppercase;
-    font-size: 22vw;
+    font-size: 18vw;
     text-align: right;
     line-height: 100%;
     font-weight: 700;
@@ -66,7 +66,7 @@
     border-radius: 100px;
     font-size: 15px;
     text-transform: uppercase;
-    border: 2px solid #200603;
+    border: 2px solid #360a05;
     font-weight: 400;
     background-color: transparent;
     font-family: inherit;
@@ -88,7 +88,7 @@
 }
 
 .we-are div:nth-child(2) {
-    background-color: #200603;
+    background-color: #360a05;
     background-image: url(../assets/orange_dancing.jpg);
     width: 40%;
     height: 510px;
@@ -110,13 +110,13 @@
 }
 
 .home-main h6 {
-    font-size: 5vw;
+    font-size: 4vw;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 45px;
     line-height: 100%;
     text-align: justify;
-    color: #200603;
+    color: #360a05;
 }
 
 .home-main .explore-classes {
@@ -151,7 +151,7 @@
     border-radius: 100px;
     padding: 30px 5px;
     border: 2px solid transparent;
-    background-color: #200603;
+    background-color: #360a05;
     color: #f4f2ea;
     text-transform: uppercase;
     font-weight: 400;
@@ -172,7 +172,7 @@
     margin-top: 30px;
     box-sizing: border-box;
     text-transform: uppercase;
-    color: #200603;
+    color: #360a05;
     display: flex;
     justify-content: space-between;
 }
@@ -201,7 +201,7 @@
 }
 
 .class-types h1 {
-    font-size: 35px;
+    font-size: 28px;
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -223,9 +223,9 @@
     font-family: inherit;
     text-transform: uppercase;
     border-radius: 100px;
-    border: 2px solid #200603;
+    border: 2px solid #360a05;
     background-color: transparent;
-    color: #200603;
+    color: #360a05;
     padding: 25px 5px;
     transition: all .4s ease-in-out;
 }
@@ -334,10 +334,10 @@
 .mid-point h6{
     padding: 30px 40px;
     margin-bottom: 70px;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 700;
     text-transform: uppercase;
-    color: #200603;
+    color: #360a05;
     line-height: 100%;
     text-align: justify;
 }
@@ -357,7 +357,6 @@ footer a {
     transition: all .4s ease-in-out;
 }
 footer a:hover {
-    font-weight: 500;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
 }
@@ -370,7 +369,7 @@ footer header {
     justify-content: space-between;
     box-sizing: border-box;
     font-size: 14px;
-    color: #200603;
+    color: #360a05;
 }
 
 footer .info {
@@ -397,8 +396,8 @@ footer .links .first{
 footer h6 {
     text-transform: uppercase;
     margin-top: 50px;
-    color: #200603;
-    font-size: 22vw;
+    color: #360a05;
+    font-size: 18vw;
     text-align: right;
     line-height: 100%;
     font-weight: 700;
@@ -535,7 +534,7 @@ footer h6 {
         height: 45vh;
     }
     .home-page .hero h1 {
-        font-size: 21vw;
+        font-size: 17vw;
     }
     .home-main h6 {
         font-size: 8vw;
@@ -551,7 +550,7 @@ footer h6 {
         padding: 30px 0;
     }
     .class-types h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .mid-point h6 {
         font-size: 8vw;
@@ -564,6 +563,6 @@ footer h6 {
         gap: 30px;
     }
     footer h6 {
-        font-size: 20vw;
+        font-size: 16vw;
     }
 }

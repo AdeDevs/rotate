@@ -1,0 +1,208 @@
+.class-page {
+    box-sizing: border-box;
+    font-family: "syncopate", sans-serif;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #f4f2ea;
+}
+
+.class-page .hero {
+    box-sizing: border-box;
+    width: 100%;
+    color: #360a05;
+    padding: 10px 40px;
+}
+
+.class-page .hero .hero-bg{
+    background-image: url(../assets/classes_bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    transition: all .4s ease-in-out;
+}
+.class-page .hero h1 {
+    font-size: 15vw;
+    text-align: right;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.class-main {
+    padding: 30px 40px;
+}
+
+.class-main .class-types {
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #360a05;
+    row-gap: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.class-main .class-types div {
+    width: 43%;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.class-types .contemporary-class, .class-types .sculpt-workout {
+    background-image: url(../assets/contemporary_dance.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.class-types .sculpt-workout {
+    background-image: url(../assets/orange_dancing.jpg);
+}
+
+.class-types .high-class, .class-types .jazz-funk {
+    background-image: url(../assets/high_energy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 70vh; 
+}
+.class-types .jazz-funk {
+    background-image: url(../assets/jazz_funk.jpeg);
+}
+
+.class-main .class-types .pause {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pause .body-barre {
+    background-image: url(../assets/body_barre.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 43%;
+}
+
+.pause .class-info {
+    width: 43%;
+}
+
+
+.class-main .the-squad {
+    background-image: url(../assets/class_meet.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 45px auto 0 auto;
+    padding: 10px 60px 40px 60px;
+    box-sizing: border-box;
+}
+
+.the-squad div {
+    width: 100%;
+    font-weight: 700;
+    padding: 10px 45px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 4.5vw;
+    text-align: justify;
+    color: #f4f2ea;
+}
+
+.the-squad button {
+    width: 100%;
+    border-radius: 100px;
+    padding: 25px 5px;
+    border: 2px solid transparent;
+    background-color: #360a05;
+    color: #f4f2ea;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    font-size: 17px;
+}
+
+.the-squad button:hover {
+    border-color: #f4f2ea;
+    background-color: #200603b9;
+    font-weight: 500;
+}
+
+@media screen and (max-width:925px) {
+    .class-page .hero {
+        padding: 10px 30px;
+    }
+    .class-page .hero .hero-bg {
+        height: 37vh;
+        background-color: red;
+        background-position: center;
+        background-size: cover;
+    }
+    .class-main {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .class-main .class-types div {
+        min-width: 100%;
+    }
+    .pause .body-barre, .pause .class-info {
+        width: 100%;
+    }
+    .class-types .contemporary-class, .class-types .sculpt-workout, .pause .body-barre {
+        height: 47vh;
+    }
+    .class-types .high-class, .class-types .jazz-funk {
+        height: 30vh;
+    }
+    .class-page .the-squad {
+        padding: 10px 30px 40px 30px;
+    }
+    .the-squad div {
+        padding: 10px 25px;
+    }
+    .the-squad button {
+        padding: 25px 5px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .class-page .hero {
+        padding: 10px 20px;
+    }
+    .class-main {
+        padding: 30px 20px;
+    }
+    .class-page .hero .hero-bg {
+        height: 22vh;
+    }
+    .class-page .hero h1 {
+        margin-top: 15px;
+        font-size: 15vw;
+    }
+    .class-main .the-squad {
+        height: 50vh;
+    }
+    .the-squad div {
+        flex-direction: column;
+        align-items: center;
+        font-size: 9vw;
+        line-height: 100%;
+        padding: 30px 0;
+    }
+}
