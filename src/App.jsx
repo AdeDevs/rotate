@@ -5,6 +5,7 @@ import AboutPage from "./screens/About"
 import ClassPage from "./screens/Class"
 import SchedulePage from "./screens/Schedule"
 import MerchPage from "./screens/Merch"
+import Footer from "./screens/Footer"
 
 function App() {
   return (

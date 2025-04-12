@@ -155,6 +155,8 @@
   font-size: 4.5vw;
 }
 
+
+
 @media screen and (max-width: 900px) {
   .nav {
     padding: 50px 30px;

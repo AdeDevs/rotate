@@ -333,7 +333,6 @@
 
 .mid-point h6{
     padding: 30px 40px;
-    margin-bottom: 70px;
     font-size: 4vw;
     font-weight: 700;
     text-transform: uppercase;
@@ -345,6 +344,7 @@
 footer {
     border-top: 1px solid #000;
     padding: 30px 40px;
+    margin-top: 70px;
     width: 100%;
     box-sizing: border-box;
     text-transform: uppercase;
