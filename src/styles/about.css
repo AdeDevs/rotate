@@ -1,0 +1,140 @@
+.about-page {
+    box-sizing: border-box;
+    font-family: "syncopate", sans-serif;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #f4f2ea;
+}
+
+.about-page .hero {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 40px;
+    color: #360a05;
+}
+
+.about-page .hero .hero-bg{
+    background-image: url(../assets/class_meet.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    transition: all .4s ease-in-out;
+}
+.about-page .hero h1 {
+    text-transform: uppercase;
+    font-size: 13.5vw;
+    word-spacing: -20px;
+    margin-top: 5px;
+    text-align: right;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.about-main h6 {
+    padding: 30px 40px;
+    font-size: 4vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #360a05;
+    line-height: 100%;
+    text-align: justify;
+}
+
+.about-fitness {
+    background-color: transparent;
+    color: #360a05;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.about-fitness .founder-bg {
+    background-image: url(../assets/rotate_founder.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 45%;
+}
+
+.about-fitness .fitness-info {
+    width: 40%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.about-fitness .fitness-info h1 {
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.about-fitness .fitness-info p {
+    font-size: 14px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 925px) {
+    .about-page .hero {
+        padding: 10px 30px;
+    }
+    .about-fitness {
+        padding: 30px;
+    }
+    .about-page .hero .hero-bg {
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .about-page .hero h1 {
+        font-size: 12vw;
+        word-spacing: normal;
+    }
+    .about-fitness {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-fitness div {
+        min-width: 100%;
+    }
+    .about-fitness .founder-bg {
+        height: 45vh;
+    }
+    .about-fitness .fitness-info h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-page .hero {
+        padding: 10px 20px;
+    }
+    .about-page .hero .hero-bg {
+        height: 23vh;
+    }
+    .about-page .hero h1 {
+        font-size: 12.5vw;
+    }
+    .about-fitness {
+        padding: 30px 20px;
+    }
+    .about-fitness .founder-bg {
+        height: 38vh;
+    }
+    .about-fitness .fitness-info h1 {
+        font-size: 30px;
+    }
+    .about-main h6 {
+        font-size: 8vw;
+        margin-top: 40px;
+        margin-bottom: 140px;
+        padding: 30px 20px;
+    }
+}
