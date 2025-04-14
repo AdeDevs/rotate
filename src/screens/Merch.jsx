@@ -43,8 +43,15 @@ export function HoodiePage() {
 
     const [count, setCount] = useState(0);
 
+    const maxCount = 10;
+
     const increment = () => {
-        setCount(count + 1);
+        if (count < maxCount) {
+            setCount(count + 1);
+        }
+        else {
+            alert(`Can't Order More Than ${maxCount}`);
+        }
     };
 
     const decrement = () => {
@@ -103,8 +110,16 @@ export function CropTopPage() {
 
     const [count, setCount] = useState(0);
 
+    const maxCount = 10;
+
     const increment = () => {
-        setCount(count + 1);
+        if (count < maxCount) {
+            setCount(count + 1);
+        }
+        else {
+            alert(`Can't Order More Than ${maxCount}`);
+        }
+    // setCount(count + 1);
     };
 
     const decrement = () => {
@@ -136,7 +151,7 @@ export function CropTopPage() {
                         <button onClick={decrement}>
                             <ion-icon name="remove"></ion-icon>
                         </button>
-                        <span><input type="tel" min="0" value={count} onChange={(e) => {
+                        <span><input type="tel" min="0" max="20" value={count} onChange={(e) => {
                             const value = parseInt(e.target.value);
                             if (!isNaN(value) && value > 0) {
                                 setCount(value);
