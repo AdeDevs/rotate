@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 function AboutPage() {
     return (
         <div className="about-page">
@@ -23,7 +21,6 @@ function AboutPage() {
                 </div>
                 <h6>INSPIRING STRENGTH and BUILDING community through judgment-free dance</h6>
             </main>
-            <Footer />
         </div>
     )
 }

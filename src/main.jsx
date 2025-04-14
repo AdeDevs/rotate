@@ -5,6 +5,7 @@ import './styles/reset.css'
 import './styles/home.css'
 import './styles/classes.css'
 import './styles/about.css'
+import './styles/merch.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 

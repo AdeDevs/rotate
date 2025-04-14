@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 function HomeScreen() {
     return (
         <div className="home-page">
@@ -94,7 +92,6 @@ function HomeScreen() {
                 </div>
                 <h6>INSPIRING STRENGTH and BUILDING community through judgment-free dance</h6>
             </section>
-            <Footer />
         </div>
     )
 }

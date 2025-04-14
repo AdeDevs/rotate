@@ -20,7 +20,12 @@
   z-index: 1000;
 }
 
-.nav.class, .nav.schedule, .nav.about, .nav.merch {
+.nav.class,
+.nav.schedule,
+.nav.about,
+.nav.merch,
+.nav.hoodie,
+.nav.crop {
   background-color: #f4f2ea;
   color: #360a05;
 }
@@ -30,10 +35,17 @@
   text-decoration: none;
   transition: all .1s ease-in-out;
 }
+
 .nav a:hover {
   color: #f4f2ea;
 }
-.nav.class a:hover, .nav.schedule a:hover, .nav.about a:hover, .nav.merch a:hover {
+
+.nav.class a:hover,
+.nav.schedule a:hover,
+.nav.about a:hover,
+.nav.merch a:hover,
+.nav.hoodie a:hover,
+.nav.crop a:hover {
   color: #360a05;
 }
 
@@ -58,7 +70,8 @@
   font-size: 1.5vw;
 }
 
-.desktop-nav a, .mobile-nav a {
+.desktop-nav a,
+.mobile-nav a {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -66,7 +79,8 @@
   text-decoration-thickness: 0px;
 }
 
-.nav .desktop-nav a:hover, .mobile-nav a:hover {
+.nav .desktop-nav a:hover,
+.mobile-nav a:hover {
   color: #f4f2ea;
   text-underline-offset: 4px;
   text-decoration-thickness: 3px;
@@ -74,12 +88,22 @@
   transition: all 0.4s ease-in-out;
 }
 
-.nav.class .desktop-nav a:hover, .nav.about .desktop-nav a:hover, .nav.schedule .desktop-nav a:hover, .nav.merch .desktop-nav a:hover {
+.nav.class .desktop-nav a:hover,
+.nav.about .desktop-nav a:hover,
+.nav.schedule .desktop-nav a:hover,
+.nav.merch .desktop-nav a:hover,
+.nav.hoodie .desktop-nav a:hover,
+.nav.crop .desktop-nav a:hover {
   color: #360a05;
   text-decoration-color: #360a05;
 }
 
-.nav.class .desktop-nav a.active, .nav.schedule .desktop-nav a.active, .nav.about .desktop-nav a.active, .nav.merch .desktop-nav a.active {
+.nav.class .desktop-nav a.active,
+.nav.schedule .desktop-nav a.active,
+.nav.about .desktop-nav a.active,
+.nav.merch .desktop-nav a.active,
+.nav.hoodie .desktop-nav a.active,
+.nav.crop .desktop-nav a.active {
   color: #360a05;
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
@@ -127,6 +151,7 @@
   visibility: hidden;
   opacity: 0;
 }
+
 .mobile-nav.active {
   visibility: visible;
   overflow: hidden;
@@ -161,48 +186,60 @@
   .nav {
     padding: 50px 30px;
   }
+
   .nav .desktop-nav {
     display: none;
   }
+
   .nav .logo {
     font-size: 30px;
   }
+
   .open-menu ion-icon {
     font-size: 45px;
   }
+
   .mobile-nav .mobile-head {
     padding: 50px 30px;
   }
 }
 
 @media screen and (min-width: 901px) {
-   .nav-extras {
+  .nav-extras {
     display: none;
   }
+
   .mobile-nav {
     opacity: none;
   }
+
   .nav .desktop-nav {
     display: inherit;
   }
-  
+
 }
 
 @media screen and (max-width: 550px) {
-  .nav, .mobile-nav .mobile-head {
+
+  .nav,
+  .mobile-nav .mobile-head {
     padding: 30px 20px;
   }
+
   .nav .mobile-head {
     font-size: 25px;
   }
+
   .nav .logo {
     font-size: 4.5vw;
   }
+
   .nav-extras {
     font-size: 4.5vw;
   }
+
   .open-menu ion-icon {
     font-size: 6vw;
   }
-  
+
 }

@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 function ClassPage() {
     return (
         <div className="class-page">
@@ -72,7 +70,6 @@ function ClassPage() {
                     <button>more about us</button>
                 </section>
             </main>
-            <Footer />
         </div>
     )
 }

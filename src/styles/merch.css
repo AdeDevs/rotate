@@ -1,0 +1,282 @@
+.merch-page, .item-page{
+    box-sizing: border-box;
+    font-family: "syncopate", sans-serif;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #f4f2ea;
+    color: #360a05;
+}
+
+
+.item-page a.active {
+    text-decoration: underline;
+}
+
+.item-page nav {
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.item-page nav a {
+    text-decoration: none;
+}
+
+.merch-page h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 30px auto;
+}
+
+.merch-page .merch-main, .item-page .item-main{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #360a053b;
+    box-sizing: border-box;
+}
+.item-page .item-main {
+    border-top: none;
+}
+
+
+.merch-main .merch-item {
+    width: 46%;
+    box-sizing: border-box;
+}
+
+.merch-item .hoodie-img, .crop-img {
+    background-image: url(../assets/Hoodie.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    transition: all .5s ease-in-out;
+}
+.hoodie-img:hover {
+    background-image: url(../assets/hoodie_hover.jpg);
+}
+
+.crop-img {
+    background-image: url(../assets/Crop_Top.jpg);
+}
+.crop-img:hover {
+    background-image: url(../assets/crop_hover.jpg);
+}
+
+
+.merch-item .merch-info {
+    margin: 10px 0px 40px 0;
+}
+
+.merch-info .order-qty {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    color: #360a05;
+    font-size: 15px;
+    padding: 14px 10px;
+    gap: 20px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 1px solid #360a05;
+    border-radius: 100px;
+    transition: all .4s ease-in-out;
+}
+.order-qty button {
+    background-color: #360a0541;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+.order-qty input {
+    background-color: transparent;
+    border: none;
+    width: 15px;
+    font: inherit;
+}
+
+.merch-info h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.merch-info p {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.merch-info .cart-btn {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 100px;
+    border: 1px solid #360a05;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.merch-info .cart-btn:hover {
+    background-color: #360a05;
+    color: #f4f2ea;
+}
+
+.item-page .hoodie-image, .item-page .crop-img {
+    background-image: url(../assets/Hoodie.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    transition: all .5s ease-in-out;
+}
+
+.item-page .merch-info {
+    width: 45%;
+}
+.item-page .merch-images {
+    justify-content: space-between;
+    display: flex;
+    width: 53%;
+}
+
+.merch-images ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    width: 15%;
+}
+
+.merch-images ul li {
+    background-image: url(../assets/Hoodie.jpg);
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.merch-images ul .back-hoodie {
+    background-image: url(../assets/hoodie_hover.jpg);
+}
+.merch-images ul .crop1 {
+    background-image: url(../assets/Crop_Top.jpg);
+}
+.merch-images ul .crop2 {
+    background-image: url(../assets/crop_hover.jpg);
+}
+
+
+.merch-images .hoodie-image {
+    width: 83%;
+}
+
+
+.item-page .merch-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-page
+
+.item-page h1 {
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.item-page h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.item-page a {
+    text-decoration: underline;
+    text-decoration-color: #360a05;
+    text-decoration-thickness: 2px;
+    color: inherit;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 925px) {
+    .merch-page .merch-main, .item-page .item-main {
+        padding: 40px 30px;
+    }
+    .item-page nav {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .merch-page .merch-main, .item-page .item-main {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .item-page .merch-info, .item-page .merch-images, .merch-main .merch-item {
+        width: 100%;
+    }
+    .merch-item .hoodie-img, .crop-img {
+        height: 50vh;
+    }
+    .merch-item .merch-info {
+        margin: 10px 0px;
+    }
+    .item-page .merch-images {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .merch-images ul {
+        width: 100%;
+        flex-direction: row;
+    }
+    .merch-images ul li {
+        width: 100px;
+        height: 90px;
+    }
+    .merch-images .hoodie-image {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .merch-page .merch-main, .item-page .item-main {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    .item-page nav {
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    .merch-page h5 {
+        margin: 10px auto;
+    }
+    .merch-item .hoodie-img, .crop-img {
+        height: 35vh;
+    }
+    .merch-images .hoodie-image {
+        height: 35vh;
+    }
+    .merch-images ul li {
+        background-color: #e6e6e6;
+        background-size: contain;
+    }  
+}
