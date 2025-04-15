@@ -5,7 +5,7 @@ function Footer() {
             <header>
                 <div className="info">
                     <h1>Rotate is a DANCE STUDIO located in HOUSTON, tx.</h1>
-                    <p>Made by <a href="#">AdeDevs</a></p>
+                    <p>Made by <a href="https://iamadedevs.vercel.app/" target="_blank">AdeDevs</a></p>
                 </div>
                 <div className="links">
                     <ul>
