@@ -1,0 +1,179 @@
+.schedule-page {
+    box-sizing: border-box;
+    font-family: "syncopate", sans-serif;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #f4f2ea;
+}
+
+.schedule-main {
+    padding: 10px 40px;
+    color: #360a05;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.schedule-main h6 {
+    text-transform: uppercase;
+    font-size: 12.5vw;
+    text-align: center;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.schedule-main .about-schedules {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.about-schedules div {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.about-schedules .schedule-bg {
+    background-image: url(../assets/schedule.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.about-schedules .schedule-info {
+    width: 43%;
+}
+
+.schedule-info h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 100%;
+}
+
+.schedule-info .appointment-box {
+    margin-top: 50px;
+    font-family: "montserrat", sans-serif;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 40px 80px 40px;
+}
+
+.appointment-box .sign {
+    display: flex;
+    font-weight: 700;
+    gap: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+.sign li {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.sign li:hover {
+    text-underline-offset: 3px;
+    text-decoration-color: #360a05;
+    text-decoration-thickness: 3px;
+}
+
+.appointment-box h2 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+
+.appointment-box .available-appts {
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+    box-shadow: -3px 0 15px #f4f2ea, 3px 0 15px #f4f2ea;
+}
+
+.available-appts .appointment {
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.appointment button {
+    background-color: #360a05;
+    color: #f4f2ea;
+    font-family: inherit;
+    border: 1px solid #360a05;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+.appointment button:hover {
+    background-color: transparent;
+    color: #360a05;
+}
+
+
+@media screen and (max-width: 925px) {
+    .schedule-main {
+        padding: 10px 30px;
+    }
+    .schedule-main h6 {
+        font-size: 12vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .schedule-main .about-schedules {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .about-schedules div {
+        min-width: 100%;
+    }
+    .about-schedules .schedule-bg {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .schedule-main {
+        padding: 10px 20px;
+    }
+    .about-schedules .schedule-bg {
+        height: 30vh;
+    }
+    .schedule-info .appointment-box {
+        margin-top: 30px;
+        padding: 25px 20px 30px 20px;
+    }
+    .appointment-box .sign {
+        margin-bottom: 20px;
+    }
+    .available-appts .appointment {
+        padding: 30px 15px;
+    }
+    .appointment h3 {
+        font-size: 15px;
+    }
+    .appointment p {
+        font-size: 14px;
+    }
+}
